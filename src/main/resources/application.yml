@@ -1,0 +1,24 @@
+server:
+  port: 6668
+
+spring:
+  application:
+    name: message-service
+
+  # redis
+  redis:
+    host: r-wz984dff193b52e4pd.redis.rds.aliyuncs.com
+    port: 6379
+    password: Aini1314liliqun
+
+
+wx:
+  mp:
+    redisConfig:
+      host: r-wz984dff193b52e4pd.redis.rds.aliyuncs.com
+      port: 6379
+    configs:
+      - appId: wx2a18ab277ef01594 # 第一个公众号的appid
+        secret: 647a3f17e5bae8f8a5e60b755e1abf11 # 公众号的appsecret
+        token: tamao # 接口配置里的Token值
+        aesKey: XDHZsQmGmLIx3fKgsKTTDNrICSfaGxTtFR8NNwJJAnJ # 接口配置里的EncodingAESKey值
